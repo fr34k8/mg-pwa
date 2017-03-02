@@ -1,0 +1,30 @@
+[
+  {
+    "name":"Assaucisson",
+    "desc":"ghuizghfyu",
+    "icon":"https://assaucisson.herokuapp.com/app/assets/img/logo.a0639f596c6643cdd8e6c618b4742b62.png",
+    "link":"https://assaucisson.herokuapp.com/",
+    "github_link":""
+  },
+  {
+    "name":"Pixsk",
+    "desc":"jigahugfz",
+    "link":"https://pixsk-c1a32.firebaseapp.com/",
+    "icon":"https://pixsk-c1a32.firebaseapp.com/icons/xxxhdpi/ic_launcher.png",
+    "github_link":""
+  },
+  {
+    "name":"Gausth",
+    "desc":"bzjhgiuhz",
+    "icon":"https://www.gausth.com/icons/xxxhdpi/ic_launcher.png",
+    "link":"https://www.gausth.com/",
+    "github_link":""
+  },
+  {
+    "name":"GDOC Platform",
+    "desc":"BLalbla",
+    "icon":"https://gdoc-platform.herokuapp.com/icons/mipmap-xxxhdpi/ic_launcher.png",
+    "link":"https://gdoc-platform.herokuapp.com/",
+    "github_link":""
+  }
+]

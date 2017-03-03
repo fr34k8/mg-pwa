@@ -12,6 +12,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/app-layout/app-layout.html">
+<link rel="import" href="mg-icons.html">
 <link rel="import" href="mg-header.html">
 <link rel="import" href="mg-projects.html">
 
@@ -21,29 +22,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
        :host {
         --app-primary-color: #4285f4;
         --app-secondary-color: black;
+        background-color: #f4f4f4;
         display: block;
       }
 
-
-      app-header {
-        color: var(--app-primary-color);
-        background-color: #fff;
+      h2 {
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 300;
+        color: #0a3142;
       }
     </style>
-    <iron-ajax auto url="https://api.github.com/users/mathieugauthier" handle-as="json" last-response="{{me}}"></iron-ajax>
+
     <!-- Main content -->
     <app-header-layout>
-      <mg-header avatar="{{me.avatar_url}}" bio="{{me.bio}}" email="{{me.email}}"></mg-header>
+      <mg-header></mg-header>
+      <h2>Some stuff</h2>
       <mg-projects></mg-projects>
     </app-header-layout>
   </template>
 
   <script>
     Polymer({
-      is: 'mg-app',
-      properties: {
-        me: Object
-      }
+      is: 'mg-app'
     });
   </script>
 </dom-module>

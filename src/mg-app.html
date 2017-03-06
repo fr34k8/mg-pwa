@@ -9,8 +9,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
-<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/app-layout/app-layout.html">
 <link rel="import" href="mg-icons.html">
 <link rel="import" href="mg-header.html">
@@ -20,24 +18,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <style>
        :host {
-        --app-primary-color: #4285f4;
-        --app-secondary-color: black;
         background-color: #f4f4f4;
         display: block;
-      }
-
-      h2 {
-        text-align: center;
-        font-size: 2.5em;
-        font-weight: 300;
-        color: #0a3142;
       }
     </style>
 
     <!-- Main content -->
     <app-header-layout>
       <mg-header></mg-header>
-      <h2>Some stuff</h2>
       <mg-projects></mg-projects>
     </app-header-layout>
   </template>

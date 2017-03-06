@@ -10,6 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 
 <dom-module id="mg-header">
   <template>
@@ -24,38 +25,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
 
-
-
-
       .hero {
         background-color: #fff;
         opacity: 0.95;
         padding: 2em;
       }
 
-
-
-
       .bg {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: -1;
         background-color: #0a3142;
       }
-
-
-
 
       .icons a {
         text-decoration: none;
         color: #0a3142;
       }
-
-
-
 
       h1 {
         font-size: 6em;
@@ -67,15 +57,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         text-decoration: none;
       }
 
-
       .desc {
         position: relative;
         padding: 1em;
         max-width: 360px;
       }
-
-
-
 
       .desc::before {
         background-color: #0a3142;
@@ -86,10 +72,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         top: -5px;
         width: 120px;
       }
-
-
-
-
 
       .desc p {
         font-size: 18px;
@@ -108,7 +90,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="hero">
       <h1>Hello</h1>
       <div class="desc">
-        <p>My name is Mathieu. I'm a Front-End developer and engineering student from Rennes (France).</p>
+        <p>I'm Mathieu. I'm a Front-End developer and engineering student from Rennes (France).</p>
       </div>
 
       <div class="icons">

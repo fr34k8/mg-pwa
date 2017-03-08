@@ -1,6 +1,5 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
-<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 <link rel="import" href="mg-project.html">
 
 <dom-module id="mg-projects">
@@ -23,9 +22,10 @@
       }
 
       .flex {
-        @apply(--layout-center-center);
-        @apply(--layout-wrap);
-        @apply(--layout-horizontal);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
       }
     </style>
     <iron-ajax auto url="/data/projects.json" handle-as="json" last-response="{{projects}}"></iron-ajax>

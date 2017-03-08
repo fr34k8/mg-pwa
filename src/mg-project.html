@@ -1,14 +1,15 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
-<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
 
 <dom-module id="mg-project">
   <template>
     <style>
        :host {
-        @apply(--layout-vertical);
-        @apply(--layout-center-center);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         position: relative;
         max-width: 320px;
         width: auto;

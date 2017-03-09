@@ -1,6 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="mg-project.html">
+<link rel="import" href="mg-data.html">
 
 <dom-module id="mg-projects">
   <template>
@@ -28,7 +28,7 @@
         flex-flow: row wrap;
       }
     </style>
-    <iron-ajax auto url="/data/projects.json" handle-as="json" last-response="{{projects}}"></iron-ajax>
+    <mg-data projects="{{projects}}"></mg-data>
     <h2>Some stuff</h2>
     <div class="container flex">
       <template is="dom-repeat" items="[[projects]]" initial-count="1">

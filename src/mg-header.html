@@ -71,12 +71,6 @@
         line-height: 2em;
         font-weight: 300;
       }
-      
-      @media (max-width: 767px) {
-         :host {
-          padding: 5em 1em 5em;
-        }
-      }
     </style>
     <iron-image class="bg" sizing="cover" preload fade placeholder="/images/bg-blur.jpg" src="/images/bg.jpg"></iron-image>
     <div class="hero">
@@ -103,8 +97,9 @@
   </template>
 
   <script>
-    Polymer({
-      is: 'mg-header'
-    });
+    class Header extends Polymer.Element {
+      static get is() { return 'mg-header' }
+    }
+    window.customElements.define(Header.is, Header);
   </script>
 </dom-module>

@@ -5,25 +5,26 @@
 <link rel="import" href="mg-projects.html">
 <lik rel="import" href="mg-analytics.html">
 
-<dom-module id="mg-app">
-  <template>
-    <style>
-       :host {
-        background-color: #f4f4f4;
-        display: block;
-      }
-    </style>
-    <mg-analytics key="UA-93479370-1"></mg-analytics>
-    <!-- Main content -->
-    <app-header-layout>
-      <mg-header></mg-header>
-      <mg-projects></mg-projects>
-    </app-header-layout>
-  </template>
+  <dom-module id="mg-app">
+    <template>
+      <style>
+         :host {
+          background-color: #f4f4f4;
+          display: block;
+        }
+      </style>
+      <mg-analytics key="UA-93479370-1"></mg-analytics>
+      <app-header-layout>
+        <mg-header></mg-header>
+        <mg-projects></mg-projects>
+      </app-header-layout>
+    </template>
 
-  <script>
-    Polymer({
-      is: 'mg-app'
-    });
-  </script>
-</dom-module>
+    <script>
+      class App extends Polymer.Element {
+        static get is() { return 'mg-app'; }
+      }
+
+      window.customElements.define(App.is, App);
+    </script>
+  </dom-module>

@@ -1,17 +1,18 @@
 {
   "entrypoint": "index.html",
   "shell": "src/mg-app.html",
-  "sourceGlobs": [
+  "sources": [
     "src/**/*",
     "images/**/*",
-    "data/*",
     "bower.json"
   ],
-  "includeDependencies": [
+  "extraDependencies": [
     "manifest.json",
-    "bower_components/webcomponentsjs/webcomponents-lite.min.js"
+    "bower_components/webcomponentsjs/*.js"
   ],
-   "lint": {
-    "rules": ["polymer-2-hybrid"] 
+  "lint": {
+    "rules": [
+      "polymer-2"
+    ]
   }
 }

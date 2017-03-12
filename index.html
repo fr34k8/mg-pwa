@@ -49,7 +49,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-tap-highlight" content="no">
 
- 
+
 
   <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
   <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
@@ -77,12 +77,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <body>
   <mg-app unresolved>Welcome, please wait...</mg-app>
 </body>
- <!-- Load and register pre-caching Service Worker -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/service-worker.js');
-      });
-    }
-  </script>
+<!-- Load and register pre-caching Service Worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/service-worker.js');
+    });
+  }
+  // track metrics with google analytics...
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName('body')[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-93479370-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </html>

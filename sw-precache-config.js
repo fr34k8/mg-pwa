@@ -14,9 +14,8 @@ module.exports = {
   staticFileGlobs: [
     "/index.html",
     "/manifest.json",
-    "/images/bg-blur.jpg",
-    "images/icons/*.png",
-    "/bower_components/webcomponentsjs/*"
+    "/images/*",
+    "/bower_components/webcomponentsjs/webcomponents-lite.js"
   ],
-  navigateFallback: "index.html"
+  navigateFallback: "/index.html"
 };

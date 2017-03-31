@@ -1,0 +1,40 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+
+<dom-module id="mg-footer">
+  <template>
+    <style>
+       :host {
+        display: block;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        padding: 0.2em 0;
+        height: 100%;
+        width: 100%;
+        background: #0a3142;
+      }
+      
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+    <footer>
+      <p>
+        Built with
+        <a href="https://www.polymer-project.org/" target="_blank" tabindex="-1">
+          <paper-icon-button icon="mg-icons:polymer"></paper-icon-button>
+        </a>
+      </p>
+      <p style="font-size: 15px">
+        2017 - Mathieu Gauthier
+      </p>
+    </footer>
+  </template>
+  <script>
+    Polymer({
+      is: 'mg-footer'
+    });
+  </script>
+</dom-module>

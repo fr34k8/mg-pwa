@@ -7,6 +7,9 @@
     "eslint-plugin-html": "^1.7.0"
   },
   "scripts": {
+    "publish": "firebase deploy",
+    "start": "polymer serve --hostname mathieugauthier --open",
+    "build": "polymer build --bundle --js-minify --css-minify --html-minify --add-service-worker",
     "lint": "eslint . --ext js,html --ignore-path .gitignore",
     "test": "npm run lint && polymer test"
   }

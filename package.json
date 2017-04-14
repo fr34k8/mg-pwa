@@ -8,7 +8,7 @@
   },
   "scripts": {
     "publish": "firebase deploy",
-    "start": "polymer serve --hostname mathieugauthier --open",
+    "start": "polymer serve --open",
     "build": "polymer build --bundle --js-minify --css-minify --html-minify --add-service-worker",
     "lint": "eslint . --ext js,html --ignore-path .gitignore",
     "test": "npm run lint && polymer test"
